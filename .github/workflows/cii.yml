@@ -10,5 +10,11 @@ jobs:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
     steps:
-      - name: Checkout code
+      - name: print message
         run: echo "fisrt activation github action"
+
+      - name: Checkout code
+        uses: actions/checkout@v5.0.0
+
+      - name: check reposotory
+        run: ls -la
